@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Allproducts() {
   const [products, setProducts] = useState([]);
@@ -53,7 +54,7 @@ function Allproducts() {
 
             <div>
               <p>{item.name}</p>
-              <p>Rs.{item.price}</p>
+              <p>Starting from Rs.{item.price}</p>
             </div>
 
             <div>

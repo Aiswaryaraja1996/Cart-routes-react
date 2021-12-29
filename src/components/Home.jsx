@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -17,14 +18,36 @@ function Home() {
         style={{
           textAlign: "center",
           color: "white",
-          fontSize: "56px",
-          fontFamily: "'Dancing Script', cursive",
+
           letterSpacing: "2px",
           marginTop: "12px",
         }}
       >
-        <p>Shop all your favourites</p>
+        <p
+          style={{
+            fontSize: "56px",
+            fontFamily: "'Dancing Script', cursive",
+            
+          }}
+        >
+          Shop all your favourites
+        </p>
+        <div
+          style={{
+            backgroundColor: "white",
+            color: "black",
+            width: "30%",
+            margin: "auto",
+            borderRadius: "1rem",
+            padding: "1rem",
+          }}
+        >
+          <p>Get 20% Discount on all products</p>
+          <p>Use the code below</p>
+          <p style={{ color: "Green", fontWeight: "bold" }}>FAV20</p>
+        </div>
       </div>
+      <Footer/>
     </div>
   );
 }
